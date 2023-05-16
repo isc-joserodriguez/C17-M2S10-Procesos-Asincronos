@@ -7,12 +7,6 @@
         console.log(msg);
     };
  */
-const saludo = (msg) => {
-  console.log(msg);
-};
-
-saludo('Hola');
-
 const objeto = {
   suma: (a, b) => {
     return a + b;
@@ -20,3 +14,23 @@ const objeto = {
 };
 
 console.log(objeto.suma(1, 2));
+
+const saludo = (msg) => {
+  console.log(msg);
+};
+
+//saludo('Hola');
+
+// setInterval
+
+const interval = setInterval(() => {
+  console.log('Hola');
+  clearInterval(interval);
+}, 5000);
+
+// setTimeout
+const timer = setTimeout(() => {
+  console.log('Hola');
+}, 5000);
+
+clearTimeout(timer);

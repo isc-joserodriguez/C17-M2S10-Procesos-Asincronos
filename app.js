@@ -1,6 +1,6 @@
 let pokemonInfo = {};
 axios
-  .get('https://pokeapi.co/api/v2/pokemon/ditto')
+  .get('https://pokeapi.co/api/v2/pokemon/starmie')
   .then(function (response) {
     pokemonInfo.src = response.data.sprites.front_default;
     pokemonInfo.textContent = response.data.name;
@@ -98,3 +98,5 @@ promesa
   });
 
 console.log('Termina script');
+
+
